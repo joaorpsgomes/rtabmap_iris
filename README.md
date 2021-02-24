@@ -1,3 +1,6 @@
+# rtabmap_iris
+rtabap para usar na dissertação
+
 rtabmap_ros [![Build Status](https://travis-ci.org/introlab/rtabmap_ros.svg?branch=master)](https://travis-ci.org/introlab/rtabmap_ros)
 ===========
 
@@ -8,9 +11,6 @@ For more information, demos and tutorials about this package, visit [rtabmap_ros
 For the RTAB-Map libraries and standalone application, visit [RTAB-Map's home page](http://introlab.github.io/rtabmap) or [RTAB-Map's wiki](https://github.com/introlab/rtabmap/wiki).
 
 # Installation 
-
-## ROS2 distribution
-**Under construction**: see [ros2 branch](https://github.com/introlab/rtabmap_ros/tree/ros2#rtabmap_ros).
 
 ## ROS distribution 
 RTAB-Map is released as binaries in the ROS distribution.
@@ -165,5 +165,8 @@ $ roscd
 $ cd ..
 $ catkin_make -j1 --pkg rtabmap_ros
 ```
+
+
+=======
 
 
