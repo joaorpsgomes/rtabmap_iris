@@ -36,8 +36,8 @@
   <arg unless="$(arg stereo)" name="depth"  default="true"/>
 
   <!-- Choose visualization -->
-  <arg name="rtabmapviz"              default="false" />
-  <arg name="rviz"                    default="true" />
+  <arg name="rtabmapviz"              default="true" />
+  <arg name="rviz"                    default="false" />
 
   <!-- Localization-only mode -->
   <arg name="localization"            default="false"/>
