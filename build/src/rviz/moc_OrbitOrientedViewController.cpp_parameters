@@ -60,11 +60,6 @@
 -I/opt/ros/melodic/include
 -I/usr/include
 -I/usr/include/opencv
--I/opt/ros/melodic/include/apriltag
--I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp
--I/opt/ros/melodic/include
--I/usr/include
--I/usr/include/opencv
 -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp
 -I/usr/include/OGRE
 -I/opt/ros/melodic/include
@@ -97,7 +92,6 @@
 -Dqh_QHpointer
 -DDISABLE_RSSDK
 -DWITH_OCTOMAP_MSGS
--DWITH_APRILTAG_ROS
 -o
 /home/joaorpsgomes/Desktop/ros_workspace/src/rtabmap_ros-master/build/src/rviz/moc_OrbitOrientedViewController.cpp
 /home/joaorpsgomes/Desktop/ros_workspace/src/rtabmap_ros-master/src/rviz/OrbitOrientedViewController.h

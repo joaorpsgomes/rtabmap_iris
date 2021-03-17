@@ -23,7 +23,20 @@
   <arg name="left_camera_info_topic"  default="$(arg stereo_namespace)/left/camera_info" />
   <arg name="right_camera_info_topic" default="$(arg stereo_namespace)/right/camera_info" />
   -->
+<!--
   <arg name="stereo_namespace"        default="/kitti/camera_gray_"/>
+  <arg name="left_image_topic"        default="$(arg stereo_namespace)left/image_raw" />
+  <arg name="right_image_topic"       default="$(arg stereo_namespace)right/image_raw" />    
+  <arg name="left_camera_info_topic"  default="$(arg stereo_namespace)left/camera_info" />
+  <arg name="right_camera_info_topic" default="$(arg stereo_namespace)right/camera_info" />
+
+  <arg name="left_image_topic"        default="/zed2/image_raw" />
+  <arg name="right_image_topic"       default="/zed2_back/image_raw" />    
+  <arg name="left_camera_info_topic"  default="/zed2/camera_info" />
+  <arg name="right_camera_info_topic" default="/zed2_back/camera_info" />
+-->
+
+<arg name="stereo_namespace"        default="/kitti/camera_gray_"/>
   <arg name="left_image_topic"        default="$(arg stereo_namespace)left/image_raw" />
   <arg name="right_image_topic"       default="$(arg stereo_namespace)right/image_raw" />    
   <arg name="left_camera_info_topic"  default="$(arg stereo_namespace)left/camera_info" />

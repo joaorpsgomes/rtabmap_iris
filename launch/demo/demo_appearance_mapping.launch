@@ -8,6 +8,7 @@
   <arg name="localization"      default="false"/>
   <arg     if="$(arg localization)" name="rtabmap_args"  default=""/>
   <arg unless="$(arg localization)" name="rtabmap_args"  default="--delete_db_on_start"/>
+  <arg name="input" default="$(find rtabmap_ros)"/>
 
   <group ns="rtabmap">
 	<!-- args: "delete_db_on_start" and "udebug" -->
@@ -52,9 +53,9 @@
 	<!-- When parameter video_or_images_path is set, the camera uses the directory of images or the video file -->
 	<node name="camera" pkg="rtabmap_ros" type="camera" output="screen">
 		<remap from="image" to="image"/>
-		
+
 		<param name="device_id"            value="0" type="int"/>
-		<param name="video_or_images_path" value="$(find rtabmap_ros)/launch/data/demo_appearance" type="string"/>
+		<param name="video_or_images_path" value="$(find rtabmap_ros)/bagfiles/image_1" type="string"/>
 		<param name="frame_rate"           value="2.0" type="double"/>
 		<param name="width"                value="0" type="int"/>
 		<param name="height"               value="0" type="int"/>
