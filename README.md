@@ -31,7 +31,8 @@ For the RTAB-Map libraries and standalone application, visit [RTAB-Map's home pa
     $ source ~/catkin_ws/devel/setup.bash
     ```
 
-
+## Simulator
+  For this project it will be used the intellwheels sensor simulator that can be downloaded [here](https://drive.google.com/file/d/1wsxc9bg74hcLTiFRIrgUMmKxt-XUGYSe/view?usp=sharing)
 
 
 # Usage
@@ -41,7 +42,17 @@ For the RTAB-Map libraries and standalone application, visit [RTAB-Map's home pa
     ```bash
     $ roslaunch rtabmap_ros wheelchair_mapping.launch
     ```
-    by running this command it will be open rviz and gazebo simulator. In rviz check Displays > MapCloud > Download map.
+    by running this command it will be open rviz and gazebo simulator. In rviz check Displays > MapCloud > Download map. You can control the wheelchair by sending information to the topic /cmd_vel, you can do this by running:
+
+    ```bash
+    $ rostopic pub -1 /cmd_vel geometry_msgs/Twist -- '[2.0, 0.0, 0.0]' '[0.0, 0.0, 1.8]'
+    ```
+
+    Or by using the package wheelchair_teleop by running:
+
+    ```bash
+    $ roslaunch wheelchair_teleop wheelchair_teleop_key.launch
+    ```
 
 * To run rtabmap mapping using kitti bags:
     ```bash
